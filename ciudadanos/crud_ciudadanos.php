@@ -64,21 +64,37 @@
         $fechanac = $_POST['txt_fechanacimiento'];
         $nivelacad = $_POST['txt_nivel_academico'];
         $cod_muni = $_POST['txt_cod_municipio'];
-        echo "<br>Codigo: " . $codigo;
-        echo "<br>Departamento: " . $depa;
-        echo "<br>Codigo de Region: " . $cod_regi;
+        echo "Datos del Ciudadano:";
+        echo "<br>dpi:";
+        echo "<br>apellido:";
+        echo "<br>nombre:";
+        echo "<br>direccion:";
+        echo "<br>telefono casa:";
+        echo "<br>telefono celular:";
+        echo "<br>email:";
+        echo "<br>fecha de nacimiento:";
+        echo "<br>nivel academico:";
+        echo "<br>codigo de municipio:";
 
     $sql = 'UPDATE departamentos 
-            SET nombre_depto = "' . $depa . '",
-                cod_region = "' . $cod_regi . '"
-            WHERE cod_depto = ' . $codigo . ';';
+            SET dpi = "' . $dpi . '",
+                apellido = "' . $apell . '",
+                nombre = "' . $nomb . '",
+                direccion = "' . $direccion . '",
+                tel_casa = "' . $tel_casa . '",
+                tel_movil = "' . $tel_cel . '",
+                email = "' . $email . '",
+                fechanac = "' . $fechanac . '",
+                cod_nivel_acad = "' . $nivelacad . '",
+                cod_muni = "' . $cod_muni . '"
+            WHERE dpi = ' . intval($dpi) . ';';
 
     echo $sql;
 
     try {
         $ejecutar = mysqli_query($conexion, $sql);
         echo "Datos modificados";
-        header('Location: departamentos.php');
+        header('Location: ciudadanos.php');
         exit;
     } catch (Exception $th) {
         echo "<br>Datos no actualizados<br>" . $th;
