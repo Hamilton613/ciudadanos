@@ -1,5 +1,5 @@
 <?php 
-   // definir las variables
+   // define las variables
    $servidor = "localhost";
    $usuario = "root";
    $password = ""; // usuario root no tiene contraseña
