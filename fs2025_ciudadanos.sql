@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `fs2025_ciudadanos`
+-- Base de datos: `fs2025_ciudadanos'
 --
 
 -- --------------------------------------------------------
@@ -46,7 +46,7 @@ CREATE TABLE `ciudadanos` (
 --
 
 INSERT INTO `ciudadanos` (`dpi`, `apellido`, `nombre`, `direccion`, `tel_casa`, `tel_movil`, `email`, `fechanac`, `cod_nivel_acad`, `cod_muni`, `contra`) VALUES
-(1007928191909, 'Soto Soto', 'Kenny Anderson', '6ta. Calle 5-30 Zona 13', 23391211, 69111032, 'sotken@mail.com', '1984-04-11', 6, 1909, 'e10adc3949ba59abbe56e057f20f883e'),
+(1007928191909, 'Soto', 'Kenny Anderson', '6ta. Calle 5-30 Zona 13', 23391211, 69111032, 'sotken@mail.com', '1984-04-11', 6, 1909, 'e10adc3949ba59abbe56e057f20f883e'),
 (1008136551007, 'Esquivel Pérez', 'Melcis Manuel', '3ra. Calle 25-19 Zona 12', 29449891, 59491079, 'esqmel@mail.com', '1967-07-16', 2, 110, 'e10adc3949ba59abbe56e057f20f883e'),
 (1008909092213, 'Acabal Pantuj', 'Karla María Alejandra', '2da. Calle 10-29 Zona 13', 23573226, 61389382, 'acakar@mail.com', '1966-06-09', 1, 107, 'e10adc3949ba59abbe56e057f20f883e'),
 (1009916131106, 'Fonsea Franco', 'Christopher Steven', '8va. Calle 12-27 Zona 21', 25370997, 57736877, 'fonchr@mail.com', '1975-05-25', 4, 1106, 'e10adc3949ba59abbe56e057f20f883e'),
