@@ -1,4 +1,4 @@
-<?php 
+<?php   
     $nombre = $_GET['txt_nombre'];
     //intval convertir a numero entero
     $edad = (int) $_GET['txt_edad'] ;
@@ -50,4 +50,4 @@
     */
 ?>
 <br>
-<a href="../index.php">Regresar</a>
+<a href="../index.php">come back</a>
